@@ -1,0 +1,23 @@
+{
+  "name": "StartApp-Sample-App",
+  "version": "1.0.0",
+  "description": "StartApp Sample Application",
+  "keywords": [
+    "StartApp",
+    "node.js",
+    "application"
+  ],
+  "author": {
+    "name": "StartApp Team",
+    "email": "team@startapp.bg",
+    "url": "http://startapp.bg/"
+  },
+  "homepage": "http://startapp.bg/",
+
+  "dependencies": {
+    "express": "~3.4.4"
+  },
+
+  "private": true,
+  "main": "server.js"
+}

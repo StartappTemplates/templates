@@ -1,0 +1,67 @@
+[{
+  "bg": [{
+    "name": "diy",
+    "versions": ["1.0"],
+    "path": "openshift-origin-cartridge-diy/usr/template/",
+    "package_files" : [".openshift", "diy", "misc", "README.md"],
+    "template" : "diy/index.html"
+  }, {
+    "name": "nodejs",
+    "versions": ["0.10"],
+    "path": "openshift-origin-cartridge-nodejs/usr/template/",
+    "package_files" : [".openshift", "node_modules", "deplist.txt", "index.html", "package.json", "README.md", "server.js"],
+    "template" : "index.html"
+  }, {
+    "name": "perl",
+    "versions": ["5.10"],
+    "path": "openshift-origin-cartridge-perl/usr/template/",
+    "package_files" : [".openshift", ".htaccess", "index.pl"],
+    "template" : "index.pl"
+  }, {
+    "name": "php",
+    "versions": ["5.3","5.4", "5.5"],
+    "path": "openshift-origin-cartridge-php/usr/template/",
+    "package_files" : [".openshift", "index.php"],
+    "template" : "index.php"
+  },{
+    "name": "python",
+    "versions": ["2.7","3.3"],
+    "path": "openshift-origin-cartridge-python/usr/versions/shared/template/",
+    "package_files" : [".openshift", "requirements.txt", "setup.py", "wsgi.py"],
+    "template" : "wsgi.py"
+  }]
+}, {
+
+  "en": [{
+    "name": "diy",
+    "versions": ["1.0"],
+    "path": "openshift-origin-cartridge-diy/usr/template/",
+    "package_files" : [".openshift", "diy", "misc", "README.md"],
+    "template" : "diy/index.html"
+  }, {
+    "name": "nodejs",
+    "versions": ["0.10"],
+    "path": "openshift-origin-cartridge-nodejs/usr/template/",
+    "package_files" : [".openshift", "node_modules", "deplist.txt", "index.html", "package.json", "README.md", "server.js"],
+    "template" : "index.html"
+  }, {
+    "name": "perl",
+    "versions": ["5.10"],
+    "path": "openshift-origin-cartridge-perl/usr/template/",
+    "package_files" : [".openshift", ".htaccess", "index.pl"],
+    "template" : "index.pl"
+  }, {
+    "name": "php",
+    "versions": ["5.3","5.4", "5.5"],
+    "path": "openshift-origin-cartridge-php/usr/template/",
+    "package_files" : [".openshift", "index.php"],
+    "template" : "index.php"
+  },{
+    "name": "python",
+    "versions": ["2.7","3.3"],
+    "path": "openshift-origin-cartridge-python/usr/versions/shared/template/",
+    "package_files" : [".openshift", "requirements.txt", "setup.py", "wsgi.py"],
+    "template" : "wsgi.py"
+  }]
+}]
+

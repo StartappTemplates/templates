@@ -1,0 +1,8 @@
+[submodule "dist/bg"]
+  path = dist/bg
+  url = git@github.com:StartappTemplates/templates.git
+  branch = bg
+[submodule "dist/en"]
+	path = dist/en
+	url = git@github.com:StartappTemplates/templates.git
+  branch = en
