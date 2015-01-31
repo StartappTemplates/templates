@@ -10,6 +10,8 @@ ARGV.each do |arg|
   end
 end
 
+@templates_dist = 'file:///root/templates/dist/'
+
 file = File.read('cartridges.json')
 data_hash = JSON.parse(file)
 
@@ -24,6 +26,7 @@ data_hash.each do |lang|
   lang.each do |cartridges|
 
     @lang = cartridges[0]
+
     #copy cartridge files
     system "cp -R .source tmp/#{@lang}/"
 
@@ -32,7 +35,11 @@ data_hash.each do |lang|
 
     system "mkdir -p final/#{@lang}"
 
+    #create config file
+    system "echo 'DEFAULT_APP_TEMPLATES=' > final/#{@lang}/config"
+
     cartridges[1].each do |cartridge|
+
 
       @name = cartridge['name']
       @path = cartridge['path']
@@ -41,6 +48,10 @@ data_hash.each do |lang|
       @versions = cartridge['versions']
 
       @versions.each do |version|
+
+        @repo_path = "#{@name}-#{version}|#{@templates_dist}#{@lang}/#{@name}-#{version}.git "
+        #puts "#{@repo_path}"
+        system "echo $(cat final/#{@lang}/config)'#{@repo_path}' > final/#{@lang}/config"
 
         #prepare template file for each language and version
         template_file = "tmp/#{@lang}/localization/#{@name}-#{version}/index.html"
