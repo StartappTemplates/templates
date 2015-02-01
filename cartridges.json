@@ -25,7 +25,7 @@
     "template" : "index.php"
   },{
     "name": "python",
-    "versions": ["2.7","3.3"],
+    "versions": ["2.6", "2.7","3.3"],
     "path": "openshift-origin-cartridge-python/usr/versions/shared/template/",
     "package_files" : [".openshift", "requirements.txt", "setup.py", "wsgi.py"],
     "template" : "wsgi.py"
@@ -63,7 +63,7 @@
     "template" : "index.php"
   },{
     "name": "python",
-    "versions": ["2.7","3.3"],
+    "versions": ["2.6", "2.7","3.3"],
     "path": "openshift-origin-cartridge-python/usr/versions/shared/template/",
     "package_files" : [".openshift", "requirements.txt", "setup.py", "wsgi.py"],
     "template" : "wsgi.py"
