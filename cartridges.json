@@ -7,7 +7,7 @@
     "template" : "diy/index.html"
   }, {
     "name": "nodejs",
-    "versions": ["0.10"],
+    "versions": ["0.6","0.10"],
     "path": "openshift-origin-cartridge-nodejs/usr/template/",
     "package_files" : [".openshift", "node_modules", "deplist.txt", "index.html", "package.json", "README.md", "server.js"],
     "template" : "index.html"
@@ -45,7 +45,7 @@
     "template" : "diy/index.html"
   }, {
     "name": "nodejs",
-    "versions": ["0.10"],
+    "versions": ["0.6","0.10"],
     "path": "openshift-origin-cartridge-nodejs/usr/template/",
     "package_files" : [".openshift", "node_modules", "deplist.txt", "index.html", "package.json", "README.md", "server.js"],
     "template" : "index.html"
