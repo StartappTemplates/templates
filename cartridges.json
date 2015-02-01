@@ -29,9 +29,14 @@
     "path": "openshift-origin-cartridge-python/usr/versions/shared/template/",
     "package_files" : [".openshift", "requirements.txt", "setup.py", "wsgi.py"],
     "template" : "wsgi.py"
+  },{
+    "name": "ruby",
+    "versions": ["1.8","1.9","2.0"],
+    "path": "openshift-origin-cartridge-ruby/versions/shared/template/",
+    "package_files" : [".openshift", "public", "tmp", "config.ru", "README.md"],
+    "template" : "config.ru"
   }]
 }, {
-
   "en": [{
     "name": "diy",
     "versions": ["1.0"],
@@ -62,6 +67,12 @@
     "path": "openshift-origin-cartridge-python/usr/versions/shared/template/",
     "package_files" : [".openshift", "requirements.txt", "setup.py", "wsgi.py"],
     "template" : "wsgi.py"
+  },{
+    "name": "ruby",
+    "versions": ["1.8","1.9","2.0"],
+    "path": "openshift-origin-cartridge-ruby/versions/shared/template/",
+    "package_files" : [".openshift", "public", "tmp", "config.ru", "README.md"],
+    "template" : "config.ru"
   }]
 }]
 
