@@ -25,10 +25,16 @@
     "template" : "index.php"
   },{
     "name": "python",
-    "versions": ["2.6", "2.7","3.3"],
+    "versions": ["2.6", "2.7"],
     "path": "openshift-origin-cartridge-python/usr/versions/shared/template/",
     "package_files" : [".openshift", "requirements.txt", "setup.py", "wsgi.py"],
     "template" : "wsgi.py"
+  },{
+    "name": "python",
+    "versions": ["3.3"],
+    "path": "openshift-origin-cartridge-python/usr/versions/",
+    "package_files" : ["shared/template/.openshift", "shared/template/requirements.txt", "shared/template/setup.py", "3.3-scl/template/wsgi.py"],
+    "template" : "3.3-scl/template/wsgi.py"
   },{
     "name": "ruby",
     "versions": ["1.8","1.9","2.0"],
@@ -63,10 +69,16 @@
     "template" : "index.php"
   },{
     "name": "python",
-    "versions": ["2.6", "2.7","3.3"],
+    "versions": ["2.6", "2.7"],
     "path": "openshift-origin-cartridge-python/usr/versions/shared/template/",
     "package_files" : [".openshift", "requirements.txt", "setup.py", "wsgi.py"],
     "template" : "wsgi.py"
+  },{
+    "name": "python",
+    "versions": ["3.3"],
+    "path": "openshift-origin-cartridge-python/usr/versions/",
+    "package_files" : ["shared/template/.openshift", "shared/template/requirements.txt", "shared/template/setup.py", "3.3-scl/template/wsgi.py"],
+    "template" : "3.3-scl/template/wsgi.py"
   },{
     "name": "ruby",
     "versions": ["1.8","1.9","2.0"],
