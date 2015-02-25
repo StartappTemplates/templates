@@ -1,42 +1,42 @@
 [{
   "bg": [{
-    "name": "diy",
+    "name": "DIY",
     "versions": ["1.0"],
     "path": "openshift-origin-cartridge-diy/usr/template/",
     "package_files" : [".openshift", "diy", "misc", "README.md"],
     "template" : "diy/index.html"
   }, {
-    "name": "nodejs",
+    "name": "NodeJS",
     "versions": ["0.6","0.10"],
     "path": "openshift-origin-cartridge-nodejs/usr/template/",
     "package_files" : [".openshift", "node_modules", "deplist.txt", "index.html", "package.json", "README.md", "server.js"],
     "template" : "index.html"
   }, {
-    "name": "perl",
+    "name": "Perl",
     "versions": ["5.10"],
     "path": "openshift-origin-cartridge-perl/usr/template/",
     "package_files" : [".openshift", ".htaccess", "index.pl"],
     "template" : "index.pl"
   }, {
-    "name": "php",
+    "name": "PHP",
     "versions": ["5.3","5.4", "5.5"],
     "path": "openshift-origin-cartridge-php/usr/template/",
     "package_files" : [".openshift", "index.php"],
     "template" : "index.php"
   },{
-    "name": "python",
+    "name": "Python",
     "versions": ["2.6", "2.7"],
     "path": "openshift-origin-cartridge-python/usr/versions/shared/template/",
     "package_files" : [".openshift", "requirements.txt", "setup.py", "wsgi.py"],
     "template" : "wsgi.py"
   },{
-    "name": "python",
+    "name": "Python",
     "versions": ["3.3"],
     "path": "openshift-origin-cartridge-python/usr/versions/",
     "package_files" : ["shared/template/.openshift", "shared/template/requirements.txt", "shared/template/setup.py", "3.3-scl/template/wsgi.py"],
     "template" : "3.3-scl/template/wsgi.py"
   },{
-    "name": "ruby",
+    "name": "Ruby",
     "versions": ["1.8","1.9","2.0"],
     "path": "openshift-origin-cartridge-ruby/versions/shared/template/",
     "package_files" : [".openshift", "public", "tmp", "config.ru", "README.md"],
@@ -44,43 +44,43 @@
   }]
 }, {
   "en": [{
-    "name": "diy",
+    "name": "DIY",
     "versions": ["1.0"],
     "path": "openshift-origin-cartridge-diy/usr/template/",
     "package_files" : [".openshift", "diy", "misc", "README.md"],
     "template" : "diy/index.html"
   }, {
-    "name": "nodejs",
+    "name": "NodeJS",
     "versions": ["0.6","0.10"],
     "path": "openshift-origin-cartridge-nodejs/usr/template/",
     "package_files" : [".openshift", "node_modules", "deplist.txt", "index.html", "package.json", "README.md", "server.js"],
     "template" : "index.html"
   }, {
-    "name": "perl",
+    "name": "Perl",
     "versions": ["5.10"],
     "path": "openshift-origin-cartridge-perl/usr/template/",
     "package_files" : [".openshift", ".htaccess", "index.pl"],
     "template" : "index.pl"
   }, {
-    "name": "php",
+    "name": "PHP",
     "versions": ["5.3","5.4", "5.5"],
     "path": "openshift-origin-cartridge-php/usr/template/",
     "package_files" : [".openshift", "index.php"],
     "template" : "index.php"
   },{
-    "name": "python",
+    "name": "Python",
     "versions": ["2.6", "2.7"],
     "path": "openshift-origin-cartridge-python/usr/versions/shared/template/",
     "package_files" : [".openshift", "requirements.txt", "setup.py", "wsgi.py"],
     "template" : "wsgi.py"
   },{
-    "name": "python",
+    "name": "Python",
     "versions": ["3.3"],
     "path": "openshift-origin-cartridge-python/usr/versions/",
     "package_files" : ["shared/template/.openshift", "shared/template/requirements.txt", "shared/template/setup.py", "3.3-scl/template/wsgi.py"],
     "template" : "3.3-scl/template/wsgi.py"
   },{
-    "name": "ruby",
+    "name": "Ruby",
     "versions": ["1.8","1.9","2.0"],
     "path": "openshift-origin-cartridge-ruby/versions/shared/template/",
     "package_files" : [".openshift", "public", "tmp", "config.ru", "README.md"],
