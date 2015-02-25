@@ -49,6 +49,9 @@ data_hash.each do |lang|
 
       @versions.each do |version|
 
+        @version = ''
+        @version = version
+
         @repo_path = "#{@name}-#{version}|#{@templates_dist}#{@lang}/#{@name}-#{version}.git "
         #puts "#{@repo_path}"
         system "echo $(cat final/#{@lang}/config)'#{@repo_path}' > final/#{@lang}/config"
@@ -56,7 +59,7 @@ data_hash.each do |lang|
         #prepare template file for each language and version
         template_file = "tmp/#{@lang}/localization/#{@name}-#{version}/index.html"
         template_content = open(template_file).read()
-        template_content.gsub! '{{name}}', @name
+        template_content.gsub! '{{name}}', "#{@name}"
         File.open(template_file, 'w') { |file| file.write(template_content) }
 
         #patch cartridge file
@@ -65,14 +68,13 @@ data_hash.each do |lang|
         cartridge_content.gsub! '{{HTML_CONTENT}}', template_content
         File.open(cartridge_file, 'w') { |file| file.write(cartridge_content) }
 
-        system "mkdir -p final/#{@lang}/#{@name}-#{version}"
+        system "mkdir -p final/#{@lang}/#{@name.downcase}-#{version}"
 
         @package_files.each do |argument|
           @file = "tmp/#{@lang}/#{@path}#{argument}"
 
-          system "cp -R #{@file} final/#{@lang}/#{@name}-#{version}/"
+          system "cp -R #{@file} final/#{@lang}/#{@name.downcase}-#{version}/"
         end
-
       end
 
     end
