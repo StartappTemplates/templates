@@ -12,13 +12,13 @@ def application(environ, start_response):
         response_body = '\n'.join(response_body)
     else:
         ctype = 'text/html'
-        response_body = '''{{HTML_CONTENT}}'''
+        response_body = '''{{HTML_CONTENT}}'''.encode('utf-8')
 
     status = '200 OK'
     response_headers = [('Content-Type', ctype), ('Content-Length', str(len(response_body)))]
     #
     start_response(status, response_headers)
-    return [response_body.encode('utf-8') ]
+    return [response_body]
 
 #
 # Below for testing only
